@@ -1,0 +1,40 @@
+#gate{
+  position:fixed;
+  inset:0;           /* top/right/bottom/left all 0 */
+  z-index:100;       /* above everything else */
+  background:#05050A;
+  display:flex; align-items:center; justify-content:center;
+}
+.stage{
+    position:relative;
+    width:190px;
+    height:310px;
+}
+.panel{
+    position:absolute;
+    top:0;
+    height:112px;
+    width:100%;
+    z-index:2;
+    background:#12121A;
+}
+.panel::after{
+    content:"";
+    position:absolute;
+    left:14px;
+    right:14px;
+    bottom:8px;
+    height:10px;
+    background:#000;
+    border:1px solid #FF2A6D;
+    box-shadow:0 0 12px #FF2A6D88
+}
+.chip{
+    position:absolute;
+    top:146px;
+    left:35px;
+    width:120px;
+    height:150px;
+    z-index:1;
+    background:#FCEE0A;
+}
